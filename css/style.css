@@ -1,1 +1,45 @@
 /* Estilos de la web Revista Enfoco */
+.header{
+    background-color: var(--black);
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+}
+.col-50{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-size-adjust: 20px;
+}
+.hero-title{
+    color: var(--heading-1);
+    font-family: var(--typo-title);
+    font-size: 56pt;
+    padding: 24px;
+}
+.hero-text{
+    color: var(--normal);
+    font-family: var(--typo-body);
+    font-size: 12pt;
+    padding: 24px;
+}
+.button-cta{
+    display: flex;
+    margin: 20px;
+    padding: 10px 16px;
+    border: 5px;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    background-color: var(--bgc-button-cta);
+    color: var(--txt-button-cta);
+    font-family: var(--typo-body);
+    font-size: 10pt;
+    font-weight: bold;
+}
+.about{
+    background-color: aqua;
+}
