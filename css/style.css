@@ -128,11 +128,13 @@
     font-size: 20px;
     font-weight: 700;
     border-radius: 48px;
+    
 }
 
 .button-cta:hover {
     color: var(--txt-button-cta-hover);
     background-color: var(--bgc-button-cta-hover);
+    box-shadow: 0 0 40px 0 var(--glow-magent);
 }
 
 .button-cta-img {
