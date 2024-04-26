@@ -63,6 +63,7 @@
 }
 
 .nav-menu-item {
+    
 }
 
 .nav-menu-link {
@@ -107,6 +108,12 @@
     justify-content: space-between;
     align-items: center;
     max-width: 48px;
+    color: var(--icon-social);
+}
+
+.nav-social-icon:hover
+{
+    color: var(--icon-social-hover);
 }
 
 /* Button CTA */
@@ -124,7 +131,8 @@
 }
 
 .button-cta:hover {
-    color: var(txt-button-cta-hover);
+    color: var(--txt-button-cta-hover);
+    background-color: var(--bgc-button-cta-hover);
 }
 
 .button-cta-img {
