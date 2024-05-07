@@ -202,9 +202,12 @@ svg {
 body {
   min-height: 100vh;
   font-size: 100%;
-  font-family: var(--typo-principal);
+  font-family: var(--typo-body);
   color: var(--white);
-	background-color: var(--black);
+ 	background-color: var(--black);
+/* background-image: url('../assets/images/gradient.png');
+	background-size: cover;
+	background-repeat: no-repeat; */
   /* opcional */
   line-height: 1.4em;
   /* opcional */
