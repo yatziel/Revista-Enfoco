@@ -205,8 +205,8 @@ body {
   font-family: var(--typo-body);
   color: var(--white);
  	background-color: var(--black);
-background-image: url('../assets/images/gradient.png');
-	background-size: cover;
+	background-image: url('../assets/images/gradient.png');
+	background-size: contain;
 	background-repeat: no-repeat;
   /* opcional */
   line-height: 1.4em;

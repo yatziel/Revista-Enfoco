@@ -1,7 +1,6 @@
 .fullwidth {
 	width: 100%;
 	height: auto;
-	background-color: var(--black);
 }
 
 .wrapper {
@@ -23,6 +22,7 @@
 	font-size: 28px;
 	font-weight: 700;
 	border-radius: 48px;
+	max-width: 260px;
 }
 
 .button-cta:hover {
@@ -132,6 +132,7 @@
 	width: 100%;
 	padding: 12px;
 	margin-top: 140px;
+	margin-bottom: 140px;
 }
 .hero {
 	padding: 24px;
@@ -172,13 +173,29 @@
 
 .main {
 	width: 100%;
-	display: flex;
-	justify-content: center;
+}
+
+
+/* Magazine Section */
+
+.magazine{
+		margin-top: 140px;
+	margin-bottom: 140px;
+}
+
+.magazine-title{
+	font-family: var(--typo-title);
+	font-size: 56pt;
+	line-height: 64pt;
+	color: var(--heading-2);
+	margin-bottom: 2rem;
 }
 
 /* About Section */
 
 .about {
+	margin-top: 140px;
+	margin-bottom: 140px;
 	display: flex;
 }
 
@@ -205,7 +222,7 @@
 	font-family: var(--typo-title);
 	font-size: 56pt;
 	line-height: 64pt;
-	color: var(--heading-2);
+	color: var(--heading-1);
 }
 
 .about-text {
