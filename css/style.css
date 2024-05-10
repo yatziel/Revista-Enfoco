@@ -1,6 +1,3 @@
-* {
-
-}
 
 /* Nav.Bar */
 
@@ -142,4 +139,57 @@
     flex-direction: row;
     align-items: center;
     max-width: 36px;
+}
+
+/* Footer */
+.footer {
+    background-color: red;
+    width: 100%;
+}
+
+.foote-brand {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-img {
+    background-color: blue;
+    max-width: 300px;
+}
+
+.footer-container {
+    background-color: blueviolet;
+}
+
+.footer-container-item {
+    background-color: chocolate;
+}
+
+.footer-menu-1 {
+    background-color: cornflowerblue;
+}
+
+.fotter-menu-2 {
+    background-color: fuchsia;
+}
+
+.fotter-menu-link {
+    background-color: black;
+}
+
+.footer-menu-icon {
+    background-color: darkgray;
+}
+
+.footer-social {
+    background-color: hotpink;
+}
+
+.footer-social-item {
+    background-color: lightsalmon;
+}
+
+.footer-social-icon {
+    background-color: yellow;
 }
