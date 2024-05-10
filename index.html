@@ -11,6 +11,10 @@
 			href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet"
 		/>
+
+		<!-- Swiper -->
+		<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="./css/resset.css" />
 		<link rel="stylesheet" href="./css/style.css" />
@@ -179,6 +183,7 @@
 		</header>
 
 		<main class="main">
+
 			<div class="wrapper">
 
 				<section class="magazine" id="magazine">
@@ -216,6 +221,50 @@
 				</section>
 
 			</div>
+
+			<div class="fullwidth">
+				<div class="wrapper">
+					<h2 class="team-title">Team</h2>
+				</div>
+				<div class="slider-container swiper">
+					<div class="slider-wrapper swiper-wrapper">
+						<div class="slider-card swiper-slide">
+							<img src="./assets/team/profile-1.jpeg" alt="">
+						</div>
+								<div class="slider-card swiper-slide">
+							<img src="./assets/team/profile-2.jpeg" alt="">
+						</div>
+								<div class="slider-card swiper-slide">
+							<img src="./assets/team/profile-3.jpeg" alt="">
+						</div>
+								<div class="slider-card swiper-slide">
+							<img src="./assets/team/profile-4.jpeg" alt="">
+						</div>
+								<div class="slider-card swiper-slide">
+							<img src="./assets/team/profile-5.jpeg" alt="">
+						</div>
+							<div class="slider-card swiper-slide">
+							<img src="./assets/team/profile-6.jpeg" alt="">
+						</div>
+								<div class="slider-card swiper-slide">
+							<img src="./assets/team/profile-7.jpeg" alt="">
+						</div>
+								<div class="slider-card swiper-slide">
+							<img src="./assets/team/profile-8.jpeg" alt="">
+						</div>
+								<div class="slider-card swiper-slide">
+							<img src="./assets/team/profile-9.jpeg" alt="">
+						</div>
+								<div class="slider-card swiper-slide">
+							<img src="./assets/team/profile-10.jpeg" alt="">
+						</div>
+					</div>
+					<div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+				</div>
+			</div>
+
 		</main>
 
 			<footer class="fullwidth">
@@ -312,5 +361,22 @@
 				</div>
 			</div>
 		</footer>
+
+		<script src="./js/swiper-bundle.min.js"></script>
+		 <script>
+
+    var swiper = new Swiper(".swiper", {
+      slidesPerView: 5,
+      spaceBetween: 24,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+			navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+    });
+  </script>
 	</body>
 </html>

@@ -230,7 +230,35 @@
 	line-height: 36pt;
 }
 
+/* Team */
 
+.team-title {
+	font-family: var(--typo-title);
+	font-size: 56pt;
+	line-height: 64pt;
+	color: var(--heading-1);
+	margin-bottom: 48px;
+}
+
+
+.slider-container {
+	padding: 0 120px;
+	margin-bottom: 240px;
+}
+
+.slider-wrapper {
+	padding: 48px;
+}
+
+.slider-card {
+	border-radius: 24px;
+	overflow: hidden;
+	transition: box-shadow .3s ease;
+}
+
+.slider-card:hover {
+		box-shadow: 0 0 40px 10px var(--glow-cyan);
+}
 
 /* Footer */
 .footer {
