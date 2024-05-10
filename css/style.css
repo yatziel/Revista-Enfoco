@@ -145,6 +145,9 @@
 .footer {
     background-color: red;
     width: 100%;
+    display: flex;
+    align-items: center;
+   /*  justify-content: space-between ; */ 
 }
 
 .foote-brand {
@@ -156,40 +159,63 @@
 .footer-img {
     background-color: blue;
     max-width: 300px;
+    padding: 48px 56px;
 }
 
 .footer-container {
-    background-color: blueviolet;
+    background-color: ivory;
 }
 
 .footer-container-item {
-    background-color: chocolate;
+    display:flex;
+    padding: 0px 0px 0px 48px;
+    background-color: wheat;
+    max-width:max-content;
 }
 
 .footer-menu-1 {
     background-color: cornflowerblue;
+    padding: 0px 48px 0px 48px;
 }
 
-.fotter-menu-2 {
+.footer-menu-2 { 
     background-color: fuchsia;
+    padding: 0px 48px 0px 48px;
 }
 
-.fotter-menu-link {
-    background-color: black;
+.footer-menu-link {
+    display: flex;
+    color: var(--nav-link);
+    padding: 24px 0px 24px 0px;
+}
+
+.footer-menu-link:hover{
+    color: var(--nav-link-hover);
 }
 
 .footer-menu-icon {
-    background-color: darkgray;
+    max-width: 18px;
+    margin: 8px 12px;
 }
 
 .footer-social {
     background-color: hotpink;
+    display: flex;
 }
 
 .footer-social-item {
     background-color: lightsalmon;
+    max-width: 100%;
+
 }
 
 .footer-social-icon {
-    background-color: yellow;
+    max-width: 32px;
+    display: flex;
+    color: var(--icon-social);
+    margin: 12px;
+}
+
+.footer-social-icon:hover{
+    color: var(--icon-social-hover);
 }
