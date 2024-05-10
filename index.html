@@ -13,7 +13,7 @@
 		/>
 
 		<!-- Swiper -->
-		<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="./css/resset.css" />
@@ -43,7 +43,7 @@
 								>
 							</li>
 							<li class="nav-menu-item">
-								<a class="nav-menu-link" href="#">
+								<a class="nav-menu-link" href="#team">
 									<img
 										class="nav-menu-icon"
 										src="./assets/icons/team.svg"
@@ -183,9 +183,7 @@
 		</header>
 
 		<main class="main">
-
 			<div class="wrapper">
-
 				<section class="magazine" id="magazine">
 					<h2 class="magazine-title">Revista</h2>
 					<iframe
@@ -219,55 +217,55 @@
 						</p>
 					</div>
 				</section>
-
 			</div>
 
 			<div class="fullwidth">
-				<div class="wrapper">
-					<h2 class="team-title">Team</h2>
-				</div>
-				<div class="slider-container swiper">
-					<div class="slider-wrapper swiper-wrapper">
-						<div class="slider-card swiper-slide">
-							<img src="./assets/team/profile-1.jpeg" alt="">
-						</div>
-								<div class="slider-card swiper-slide">
-							<img src="./assets/team/profile-2.jpeg" alt="">
-						</div>
-								<div class="slider-card swiper-slide">
-							<img src="./assets/team/profile-3.jpeg" alt="">
-						</div>
-								<div class="slider-card swiper-slide">
-							<img src="./assets/team/profile-4.jpeg" alt="">
-						</div>
-								<div class="slider-card swiper-slide">
-							<img src="./assets/team/profile-5.jpeg" alt="">
-						</div>
-							<div class="slider-card swiper-slide">
-							<img src="./assets/team/profile-6.jpeg" alt="">
-						</div>
-								<div class="slider-card swiper-slide">
-							<img src="./assets/team/profile-7.jpeg" alt="">
-						</div>
-								<div class="slider-card swiper-slide">
-							<img src="./assets/team/profile-8.jpeg" alt="">
-						</div>
-								<div class="slider-card swiper-slide">
-							<img src="./assets/team/profile-9.jpeg" alt="">
-						</div>
-								<div class="slider-card swiper-slide">
-							<img src="./assets/team/profile-10.jpeg" alt="">
-						</div>
+				<section class="team" id="team">
+					<div class="wrapper">
+						<h2 class="team-title">Team</h2>
 					</div>
-					<div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-				</div>
+					<div class="slider-container swiper">
+						<div class="slider-wrapper swiper-wrapper">
+							<div class="slider-card swiper-slide">
+								<img class="slider-img" src="./assets/team/profile-1.jpeg" alt="" />
+							</div>
+							<div class="slider-card swiper-slide">
+								<img class="slider-img" src="./assets/team/profile-2.jpeg" alt="" />
+							</div>
+							<div class="slider-card swiper-slide">
+								<img class="slider-img" src="./assets/team/profile-3.jpeg" alt="" />
+							</div>
+							<div class="slider-card swiper-slide">
+								<img class="slider-img" src="./assets/team/profile-4.jpeg" alt="" />
+							</div>
+							<div class="slider-card swiper-slide">
+								<img class="slider-img" src="./assets/team/profile-5.jpeg" alt="" />
+							</div>
+							<div class="slider-card swiper-slide">
+								<img class="slider-img" src="./assets/team/profile-6.jpeg" alt="" />
+							</div>
+							<div class="slider-card swiper-slide">
+								<img class="slider-img" src="./assets/team/profile-7.jpeg" alt="" />
+							</div>
+							<div class="slider-card swiper-slide">
+								<img class="slider-img" src="./assets/team/profile-8.jpeg" alt="" />
+							</div>
+							<div class="slider-card swiper-slide">
+								<img class="slider-img" src="./assets/team/profile-9.jpeg" alt="" />
+							</div>
+							<div class="slider-card swiper-slide">
+								<img class="slider-img" src="./assets/team/profile-10.jpeg" alt="" />
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</section>
 			</div>
-
 		</main>
 
-			<footer class="fullwidth">
+		<footer class="fullwidth">
 			<div class="footer">
 				<div class="footer-brand">
 					<img
@@ -286,7 +284,15 @@
 							/>
 							Inicio</a
 						>
-						<a class="footer-menu-link" href="#" title="Icono Directorio">
+						<a class="footer-menu-link" href="#about" title="Icono Directorio">
+							<img
+								class="footer-menu-icon"
+								src="./assets/icons/about.svg"
+								alt="Icono Inicio"
+							/>
+							Acerca de</a
+						>
+						<a class="footer-menu-link" href="#team" title="Icono Directorio">
 							<img
 								class="footer-menu-icon"
 								src="./assets/icons/team.svg"
@@ -363,20 +369,6 @@
 		</footer>
 
 		<script src="./js/swiper-bundle.min.js"></script>
-		 <script>
-
-    var swiper = new Swiper(".swiper", {
-      slidesPerView: 5,
-      spaceBetween: 24,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-			navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      },
-    });
-  </script>
+		<script src="./js/app.js"></script>
 	</body>
 </html>
