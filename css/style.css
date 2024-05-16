@@ -96,25 +96,31 @@ a:hover {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	gap: 1rem;
 	background-color: blue;
 }
 
 
 .nav-container-item:nth-child(1) {
 	display: flex;
-	/* background-color: var(--gray-dark); */
+	padding: 1rem;
+	gap: 1rem;
+	border-radius: 4rem;
+	background-color: var(--gray-dark);
 }
 
 .nav-menu {
 	display: flex;
-	
+	align-items: center;
+	gap: 1rem;
 }
 
 .nav-menu-link {
 	display: flex;
 	justify-content: start;
 	align-items: center;
-
+	gap: .5rem;
+	text-wrap: nowrap;
 	font-weight: 500;
 }
 .nav-menu-link:hover {
