@@ -14,3 +14,25 @@ var swiper = new Swiper('.swiper', {
 		prevEl: '.swiper-button-prev',
 	},
 });
+
+
+/*  Menu */
+
+const buttonMenu = document.querySelector('.button-menu');
+const menu 	 		 = document.querySelector('.menu');
+const menuLinks  = document.querySelectorAll('.nav-menu-link');
+const buttonCta  = document.querySelector('.button-cta');
+
+buttonMenu.addEventListener('click', () => {
+	menu.classList.toggle('active')
+})
+
+menuLinks.forEach((e) => {
+	e.addEventListener('click', () => {
+		menu.classList.remove('active');
+	});
+});
+
+buttonCta.addEventListener('click', () => {
+	menu.classList.remove('active');
+});
