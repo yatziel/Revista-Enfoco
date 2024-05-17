@@ -1,5 +1,9 @@
 /* Titles & Paragraphs */
 
+:target {
+  scroll-margin-top: 120px; 
+}
+
 h1,
 h2,
 h3,
@@ -233,8 +237,7 @@ a:hover {
 
 .header {
 	width: 100%;
-	margin: 10rem 0;
-	
+	margin: 8rem 0;
 }
 
 .hero {
@@ -303,18 +306,18 @@ a:hover {
 /* About Section */
 
 .about {
-	margin-top: 140px;
-	margin-bottom: 140px;
+	margin: 8rem 0;
 	display: flex;
 }
 
 .about-item {
-	flex-basis: 50%;
+	flex: 1 1 50%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	gap: 48px;
 	padding: 24px;
+
 }
 
 .about-item:nth-child(1) {
@@ -322,7 +325,7 @@ a:hover {
 }
 
 .about-img {
-	max-width: 80%;
+	max-width: 360px;
 	border-radius: 24px;
 	box-shadow: 0 0 40px 10px var(--glow-magent);
 }
@@ -331,14 +334,21 @@ a:hover {
 	color: var(--heading-1);
 }
 
-.about-text {
+
+
+@media screen and (max-width:480px) {
+	.about {
+		flex-direction: column-reverse;
+
+	}	
 }
 
 /* Team */
-
+.team {
+	margin: 8rem 0;
+}
 .team-title {
 	color: var(--heading-1);
-	margin-bottom: 48px;
 }
 
 .slider-container {
@@ -472,4 +482,25 @@ a:hover {
 
 .footer-social-icon:hover {
 	color: var(--icon-social-hover);
+}
+
+@media screen and (max-width: 768px) {
+	.footer {
+		flex-direction: column;
+		gap: 2rem;
+
+	}
+	.footer-menus {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 1rem;
+	}
+	.footer-menu-1,
+	.footer-menu-2 {
+		gap: 1rem;
+	}
+
+	.footer-menu-link {
+		width: 100%;
+	}
 }
