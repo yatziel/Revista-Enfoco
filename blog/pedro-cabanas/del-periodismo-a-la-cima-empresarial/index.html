@@ -1,187 +1,869 @@
 <!DOCTYPE html>
 <html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Revista Enfoco</title>
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Revista Enfoco</title>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="../../../css/resset.css" />
+		<link rel="stylesheet" href="../../../css/style.css" />
+		<link rel="stylesheet" href="./css/post.css">
+	</head>
 
+	<body>
+		<nav class="fullwidth">
+			<div class="nav">
+				<div class="nav-brand">
+					<img
+						class="nav-img"
+						src="../../../assets/brand/symbol.svg"
+						alt="Símbolo Revista Enfoco"
+					/>
+				</div>
+				<div class="nav-container">
+					<div class="nav-container-item menu">
+						<ul class="nav-menu">
+							<li class="nav-menu-item">
+								<a class="nav-menu-link" href="../../../index.html#about">
+									<img
+										class="nav-menu-icon"
+										src="../../../assets/icons/about.svg"
+										alt="Icono Acerca de"
+									/>Acerca de
+								</a>
+							</li>
+							<li class="nav-menu-item">
+								<a class="nav-menu-link" href="../../../index.html#team">
+									<img
+										class="nav-menu-icon"
+										src="../../../assets/icons/team.svg"
+										alt="Icono Directorio"
+									/>Equipo</a
+								>
+							</li>
+							<li class="nav-menu-item">
+								<a class="nav-menu-link" href="#contact">
+									<img
+										class="nav-menu-icon"
+										src="../../../assets/icons/contact.svg"
+										alt="Icono Contacto"
+									/>Contacto</a
+								>
+							</li>
+						</ul>
+						<div class="nav-social">
+							<a
+								class="nav-social-item"
+								href="https://www.facebook.com/people/RevistaENFOCO/61559283003463/?mibextid=LQQJ4d"
+								target="_blank"
+							>
+								<svg
+									class="nav-social-icon"
+									viewBox="0 0 32 32"
+									fill="none"
+									alt="Icono Facebook"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM13.2083 24.9143V16.0762V15.9238H11.6339C11.497 15.9238 11.4286 15.8476 11.4286 15.6952V12.9524C11.4286 12.8 11.497 12.7238 11.6339 12.7238H13.2083V10.1333C13.2083 8.30476 14.6458 6.85714 16.4256 6.85714H19.4375C19.5744 6.85714 19.6429 6.93333 19.6429 7.08571V9.75238C19.6429 9.90476 19.5744 9.98095 19.369 9.98095H17.5893C17.1101 9.98095 16.7679 10.3619 16.7679 10.819V12.7238H19.3006C19.4375 12.7238 19.506 12.8 19.506 12.9524L19.3006 15.6952C19.3006 15.8476 19.2321 15.9238 19.0952 15.9238H16.7679V24.9143C16.7679 25.0667 16.6994 25.1429 16.5625 25.1429H13.4137C13.2768 25.1429 13.2083 25.0667 13.2083 24.9143Z"
+									/>
+								</svg>
+							</a>
+							<a
+								class="nav-social-item"
+								href="https://www.instagram.com/revista.enfoco/"
+								target="_blank"
+							>
+								<svg
+									class="nav-social-icon"
+									viewBox="0 0 32 32"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM20.5714 16C20.5714 18.5247 18.5247 20.5714 16 20.5714C13.4753 20.5714 11.4286 18.5247 11.4286 16C11.4286 13.4753 13.4753 11.4286 16 11.4286C18.5247 11.4286 20.5714 13.4753 20.5714 16ZM19.0476 16C19.0476 17.6831 17.6831 19.0476 16 19.0476C14.3168 19.0476 12.9524 17.6831 12.9524 16C12.9524 14.3168 14.3168 12.9524 16 12.9524C17.6831 12.9524 19.0476 14.3168 19.0476 16ZM20.5714 10.6667C20.1506 10.6667 19.8095 11.0078 19.8095 11.4286C19.8095 11.8494 20.1506 12.1905 20.5714 12.1905C20.9922 12.1905 21.3333 11.8494 21.3333 11.4286C21.3333 11.0078 20.9922 10.6667 20.5714 10.6667ZM7.61905 14.9333C7.61905 12.3731 7.61905 11.093 8.1173 10.1151C8.55558 9.25492 9.25492 8.55558 10.1151 8.1173C11.093 7.61905 12.3731 7.61905 14.9333 7.61905H17.0667C19.6269 7.61905 20.907 7.61905 21.8849 8.1173C22.7451 8.55558 23.4444 9.25492 23.8827 10.1151C24.381 11.093 24.381 12.3731 24.381 14.9333V17.0667C24.381 19.6269 24.381 20.907 23.8827 21.8849C23.4444 22.7451 22.7451 23.4444 21.8849 23.8827C20.907 24.381 19.6269 24.381 17.0667 24.381H14.9333C12.3731 24.381 11.093 24.381 10.1151 23.8827C9.25492 23.4444 8.55558 22.7451 8.1173 21.8849C7.61905 20.907 7.61905 19.6269 7.61905 17.0667V14.9333ZM14.9333 9.14286H17.0667C18.372 9.14286 19.2592 9.14404 19.9451 9.20008C20.6132 9.25466 20.9548 9.35359 21.1931 9.47502C21.7666 9.76721 22.2328 10.2334 22.525 10.8069C22.6464 11.0452 22.7454 11.3868 22.7999 12.0549C22.8559 12.7408 22.8571 13.6281 22.8571 14.9333V17.0667C22.8571 18.372 22.8559 19.2592 22.7999 19.9451C22.7454 20.6132 22.6464 20.9548 22.525 21.1931C22.2328 21.7666 21.7666 22.2328 21.1931 22.525C20.9548 22.6464 20.6132 22.7454 19.9451 22.7999C19.2592 22.8559 18.372 22.8571 17.0667 22.8571H14.9333C13.6281 22.8571 12.7408 22.8559 12.0549 22.7999C11.3868 22.7454 11.0452 22.6464 10.8069 22.525C10.2334 22.2328 9.76721 21.7666 9.47502 21.1931C9.35359 20.9548 9.25466 20.6132 9.20008 19.9451C9.14404 19.2592 9.14286 18.372 9.14286 17.0667V14.9333C9.14286 13.6281 9.14404 12.7408 9.20008 12.0549C9.25466 11.3868 9.35359 11.0452 9.47502 10.8069C9.76721 10.2334 10.2334 9.76721 10.8069 9.47502C11.0452 9.35359 11.3868 9.25466 12.0549 9.20008C12.7408 9.14404 13.6281 9.14286 14.9333 9.14286Z"
+									/>
+								</svg>
+							</a>
+							<a
+								class="nav-social-item"
+								href="https://www.tiktok.com/@revista.enfoco"
+								target="_blank"
+							>
+								<svg
+									class="nav-social-icon"
+									viewBox="0 0 32 32"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M15.9859 32C7.07154 31.9931 -0.0206095 24.8747 4.49994e-05 15.9538C0.0206995 7.05194 7.16027 -0.0312649 16.0815 0.000103787C24.9224 0.0314725 31.9923 7.12998 32 15.9828C32.0076 24.8984 24.9017 32.0069 15.9859 32ZM16.4778 6.68011C16.4778 7.38016 16.4778 7.90119 16.4778 8.42222C16.4785 11.7374 16.4892 15.0533 16.4716 18.3684C16.4686 18.9361 16.4303 19.529 16.2651 20.0661C15.8443 21.4356 14.3985 22.2895 13.0537 22.0431C11.5742 21.7723 10.5453 20.5175 10.5882 19.0378C10.6325 17.5245 11.7119 16.3692 13.2281 16.2215C13.6557 16.1802 14.0849 16.1603 14.5546 16.1274V12.9776C10.6295 12.6011 7.53588 15.1068 7.29338 18.7548C7.07154 22.102 9.73061 25.1249 13.056 25.3047C16.7463 25.5044 19.6501 22.8281 19.7144 19.1304C19.7488 17.1419 19.719 15.1519 19.7289 13.1627C19.7305 12.797 19.784 12.4313 19.8054 12.1612C21.2336 12.7373 22.5762 13.279 24.0664 13.8804C24.2966 12.5629 24.4596 11.6249 24.6378 10.6058C22.4645 10.211 21.0577 8.97079 20.0005 7.23327C19.8345 6.96013 19.3977 6.73672 19.0642 6.70382C18.2816 6.62655 17.486 6.67934 16.4755 6.67934L16.4778 6.68011Z"
+									/>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="nav-container-item">
+						<a class="button-cta" href="../../../index.html#magazine">
+							Ver Revista
+							<svg
+								class="button-cta-img"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<mask
+									id="mask0_874_9"
+									style="mask-type: alpha"
+									maskUnits="userSpaceOnUse"
+									x="0"
+									y="0"
+								>
+									<rect width="24" height="24" />
+								</mask>
+								<g mask="url(#mask0_874_9)">
+									<path
+										d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z"
+									/>
+								</g>
+							</svg>
+						</a>
+						<button class="button-menu">
+							<svg
+								class="button-menu-svg"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="currentColor"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+								/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="../../../css/resset.css" />
-  <link rel="stylesheet" href="../../../css/style.css" />
-</head>
+		<header class="post-cover">
+			<div class="wrapper">
+					<h1 class="post-title">Del Periodismo a la Cima Empresarial</h1>
+					<p class="post-autor">Pedro Cabañas Reynal</p>
+			</div>
+		</header>
 
-<body>
-  <nav class="fullwidth">
-    <div class="nav">
-      <div class="nav-brand">
-        <img class="nav-img" src="../../../assets/brand/symbol.svg" alt="Símbolo Revista Enfoco" />
-      </div>
-      <div class="nav-container">
-        <div class="nav-container-item menu">
-          <ul class="nav-menu">
-            <li class="nav-menu-item">
-              <a class="nav-menu-link" href="../../../index.html#about">
-                <img class="nav-menu-icon" src="../../../assets/icons/about.svg" alt="Icono Acerca de" />Acerca
-                de
-              </a>
-            </li>
-            <li class="nav-menu-item">
-              <a class="nav-menu-link" href="../../../index.html#team">
-                <img class="nav-menu-icon" src="../../../assets/icons/team.svg" alt="Icono Directorio" />Equipo</a>
-            </li>
-            <li class="nav-menu-item">
-              <a class="nav-menu-link" href="#contact">
-                <img class="nav-menu-icon" src="../../../assets/icons/contact.svg" alt="Icono Contacto" />Contacto</a>
-            </li>
-          </ul>
-          <div class="nav-social">
-            <a class="nav-social-item"
-              href="https://www.facebook.com/people/RevistaENFOCO/61559283003463/?mibextid=LQQJ4d" target="_blank">
-              <svg class="nav-social-icon" viewBox="0 0 32 32" fill="none" alt="Icono Facebook"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM13.2083 24.9143V16.0762V15.9238H11.6339C11.497 15.9238 11.4286 15.8476 11.4286 15.6952V12.9524C11.4286 12.8 11.497 12.7238 11.6339 12.7238H13.2083V10.1333C13.2083 8.30476 14.6458 6.85714 16.4256 6.85714H19.4375C19.5744 6.85714 19.6429 6.93333 19.6429 7.08571V9.75238C19.6429 9.90476 19.5744 9.98095 19.369 9.98095H17.5893C17.1101 9.98095 16.7679 10.3619 16.7679 10.819V12.7238H19.3006C19.4375 12.7238 19.506 12.8 19.506 12.9524L19.3006 15.6952C19.3006 15.8476 19.2321 15.9238 19.0952 15.9238H16.7679V24.9143C16.7679 25.0667 16.6994 25.1429 16.5625 25.1429H13.4137C13.2768 25.1429 13.2083 25.0667 13.2083 24.9143Z" />
-              </svg>
-            </a>
-            <a class="nav-social-item" href="https://www.instagram.com/revista.enfoco/" target="_blank">
-              <svg class="nav-social-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM20.5714 16C20.5714 18.5247 18.5247 20.5714 16 20.5714C13.4753 20.5714 11.4286 18.5247 11.4286 16C11.4286 13.4753 13.4753 11.4286 16 11.4286C18.5247 11.4286 20.5714 13.4753 20.5714 16ZM19.0476 16C19.0476 17.6831 17.6831 19.0476 16 19.0476C14.3168 19.0476 12.9524 17.6831 12.9524 16C12.9524 14.3168 14.3168 12.9524 16 12.9524C17.6831 12.9524 19.0476 14.3168 19.0476 16ZM20.5714 10.6667C20.1506 10.6667 19.8095 11.0078 19.8095 11.4286C19.8095 11.8494 20.1506 12.1905 20.5714 12.1905C20.9922 12.1905 21.3333 11.8494 21.3333 11.4286C21.3333 11.0078 20.9922 10.6667 20.5714 10.6667ZM7.61905 14.9333C7.61905 12.3731 7.61905 11.093 8.1173 10.1151C8.55558 9.25492 9.25492 8.55558 10.1151 8.1173C11.093 7.61905 12.3731 7.61905 14.9333 7.61905H17.0667C19.6269 7.61905 20.907 7.61905 21.8849 8.1173C22.7451 8.55558 23.4444 9.25492 23.8827 10.1151C24.381 11.093 24.381 12.3731 24.381 14.9333V17.0667C24.381 19.6269 24.381 20.907 23.8827 21.8849C23.4444 22.7451 22.7451 23.4444 21.8849 23.8827C20.907 24.381 19.6269 24.381 17.0667 24.381H14.9333C12.3731 24.381 11.093 24.381 10.1151 23.8827C9.25492 23.4444 8.55558 22.7451 8.1173 21.8849C7.61905 20.907 7.61905 19.6269 7.61905 17.0667V14.9333ZM14.9333 9.14286H17.0667C18.372 9.14286 19.2592 9.14404 19.9451 9.20008C20.6132 9.25466 20.9548 9.35359 21.1931 9.47502C21.7666 9.76721 22.2328 10.2334 22.525 10.8069C22.6464 11.0452 22.7454 11.3868 22.7999 12.0549C22.8559 12.7408 22.8571 13.6281 22.8571 14.9333V17.0667C22.8571 18.372 22.8559 19.2592 22.7999 19.9451C22.7454 20.6132 22.6464 20.9548 22.525 21.1931C22.2328 21.7666 21.7666 22.2328 21.1931 22.525C20.9548 22.6464 20.6132 22.7454 19.9451 22.7999C19.2592 22.8559 18.372 22.8571 17.0667 22.8571H14.9333C13.6281 22.8571 12.7408 22.8559 12.0549 22.7999C11.3868 22.7454 11.0452 22.6464 10.8069 22.525C10.2334 22.2328 9.76721 21.7666 9.47502 21.1931C9.35359 20.9548 9.25466 20.6132 9.20008 19.9451C9.14404 19.2592 9.14286 18.372 9.14286 17.0667V14.9333C9.14286 13.6281 9.14404 12.7408 9.20008 12.0549C9.25466 11.3868 9.35359 11.0452 9.47502 10.8069C9.76721 10.2334 10.2334 9.76721 10.8069 9.47502C11.0452 9.35359 11.3868 9.25466 12.0549 9.20008C12.7408 9.14404 13.6281 9.14286 14.9333 9.14286Z" />
-              </svg>
-            </a>
-            <a class="nav-social-item" href="https://www.tiktok.com/@revista.enfoco" target="_blank">
-              <svg class="nav-social-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M15.9859 32C7.07154 31.9931 -0.0206095 24.8747 4.49994e-05 15.9538C0.0206995 7.05194 7.16027 -0.0312649 16.0815 0.000103787C24.9224 0.0314725 31.9923 7.12998 32 15.9828C32.0076 24.8984 24.9017 32.0069 15.9859 32ZM16.4778 6.68011C16.4778 7.38016 16.4778 7.90119 16.4778 8.42222C16.4785 11.7374 16.4892 15.0533 16.4716 18.3684C16.4686 18.9361 16.4303 19.529 16.2651 20.0661C15.8443 21.4356 14.3985 22.2895 13.0537 22.0431C11.5742 21.7723 10.5453 20.5175 10.5882 19.0378C10.6325 17.5245 11.7119 16.3692 13.2281 16.2215C13.6557 16.1802 14.0849 16.1603 14.5546 16.1274V12.9776C10.6295 12.6011 7.53588 15.1068 7.29338 18.7548C7.07154 22.102 9.73061 25.1249 13.056 25.3047C16.7463 25.5044 19.6501 22.8281 19.7144 19.1304C19.7488 17.1419 19.719 15.1519 19.7289 13.1627C19.7305 12.797 19.784 12.4313 19.8054 12.1612C21.2336 12.7373 22.5762 13.279 24.0664 13.8804C24.2966 12.5629 24.4596 11.6249 24.6378 10.6058C22.4645 10.211 21.0577 8.97079 20.0005 7.23327C19.8345 6.96013 19.3977 6.73672 19.0642 6.70382C18.2816 6.62655 17.486 6.67934 16.4755 6.67934L16.4778 6.68011Z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="nav-container-item">
-          <a class="button-cta" href="../../../index.html#magazine">
-            Ver Revista
-            <svg class="button-cta-img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <mask id="mask0_874_9" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0">
-                <rect width="24" height="24" />
-              </mask>
-              <g mask="url(#mask0_874_9)">
-                <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z" />
-              </g>
-            </svg>
-          </a>
-          <button class="button-menu">
-            <svg class="button-menu-svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </nav>
+		<main class="main">
+			<div class="wrapper">
+				<section class="post" id="post">
+					<div class="post-item">
+						<img class="post-img" src="./assets/pedro.jpg" alt="Imagen Perdo Cabañas">
+						<p class="post-text">
+							Muy buenas tardes, somos Dante Miranda y José Ángel Soriano de
+							parte de Cátedra Nueve, y tenemos en esta oportunidad el enorme
+							gusto de tenerlo, muy buenas tardes ¿Cómo se encuentra?
+						</p>
+						<p class="post-text">
+							Bien, a todo dar. Muy a gusto de estar en Cátedra Nueve.
+						</p>
+						<p class="post-text">
+							En su casa, en su casa. Ok, usted que es una persona empresarial,
+							de telecomunicaciones, que es competitiva, queremos saber un poco
+							de su trasfondo hablar sobre usted. Si nos remontamos a su niñez,
+							¿Cómo se veía usted? ¿Cuál es el sueño que usted tenía proyectado
+							a ser “de grande”?
+						</p>
+						<p class="post-text">
+							Bueno a mí me gustaban mucho los deportes, yo jugaba muy bien
+							football, y se me hubiera antojado dedicarme al football
+							profesional, no se dio. Jugué tercera división en Jalapa, Veracruz
+							donde soy, donde nací, jugué muy bien tenis y todos los deportes
+							en general. Era un chavo muy deportista, y por lo mismo de los
+							deportes, muy competitivo. Me gustaba competir y me gustaba ganar.
+							No soportaba perder.
+						</p>
+						<p class="post-text">
+							Claro, entonces de cierta manera podría decirse que siempre atinó
+							a ganar. En ese sentido ¿Alguna vez imaginó, en el mundo de los
+							deportes, o fuera del mundo de los deportes, escalar tanto como lo
+							ha hecho hasta ahora?
+						</p>
+						<p class="post-text">
+							No, yo creo que de chavo no tienes ni idea de a dónde va air el
+							camino de tu vida, yo más bien era deportista, me gustaba la
+							competencia, no creas que me gustaba mucho estudiar, no era algo
+							como mi valor más importante, era medio flojo en la escuela,
+							trataba yo de cumplir en la escuela con lo que se tenía, pero
+							nunca fui un alumno de dieces ni mucho menos, al contrario, era yo
+							un chavo muy competitivo en todo pero, crecí en un barrio fuerte,
+							grueso, de mucha vida y mucha necesidad, con gente muy agresiva.
+							Entonces la competencia vivida tenía que ver con los deportes y en
+							sobrevivir también en el entorno en el que estaba. Pero no, de
+							chavo no tienes claro qué vas a ser ni en dónde vas a estar. Yo si
+							empecé muy chavo a interesarme en cosas que tenían que ver con la
+							comunicación porque mi padre era periodista, era locutor, y
+							entonces mi vida de chavo, en mi casa siempre había gente que
+							tenía que ver con la comunicación o con la política, y yo empecé a
+							escribir cuentos muy chavito, desde los siete u ocho años,
+							entonces me interesaba mucho el tema de escribir bien. En mi casa
+							el tema del lenguaje, el uso de escritura, de hablar bien,
+							correctamente, del no tener faltas de ortografía, era una
+							exigencia misma de mi propia casa, del entorno donde me
+							desarrollé. Entonces, publiqué algunos de esos cuentos, muy
+							chiquito, en un periódico de “Nacional”, se llamaba: novedades de
+							México, ya no existe, y mi papá era corresponsal de ese mismo
+							periódico, entonces tuve la oportunidad de que me publicaran en un
+							segmento de niños que se llamaba: Mi periodiquito; pude publicar
+							un par de esos cuentos, cuentos de niños, que hablaban del perro o
+							del gato… del sol, de la alberca, el deporte. Entonces desde muy
+							chavito me empecé, justo, a orientar a lo que quería hacer, un
+							poco por imitación de lo que veía yo en mi casa. Yo nunca dudé qué
+							quería estudiar o a qué me quería dedicar. Nunca pensé en ser
+							médico ni astronauta, ni bombero, ni nada. Yo quería hacer una
+							carrera en los medios de comunicación.
+						</p>
+						<p class="post-text">
+							Claro, usted lo dice, el entorno en el que se desarrolló demandaba
+							cierto carácter y por lo que estamos viendo siempre tuvo la
+							iniciativa en los medios de comunicación, en la parte escrita y
+							oral. Y por supuesto, muchos de nosotros queremos ser
+							footballistas, astronautas, bomberos, sin embargo es una sorpresa
+							bastante grata escuchar esto de su parte. Tenemos entendido que
+							estudió algo referente al periodismo y administración de empresas,
+							¿Cierto?
+						</p>
+						<p class="post-text">
+							Sí, yo estudié periodismo en una escuela en la Ciudad de México,
+							que se llamaba la carrera: periodismo y arte en radio y
+							televisión. Realmente el tema de la administración de empresas y
+							el estar metido en cuestiones empresariales y de negocios vino
+							mucho después. Primero empecé a trabajar, mi primer trabajo formal
+							en los medios de comunicación, estaba yo en segundo de secundaria,
+							y como a mi casa venían todo el tiempo amigos y colegas de mi
+							papá, periodistas, un día fui a ver a Orlando García Ortiz, que
+							era el director de “El Sol” veracruzano, como El Sol de Puebla
+							aquí, era también una organización editorial mexicana, del mismo
+							grupo, y fui a ver a Orlando que era el director y le dije que yo
+							quería ser reportero. Y me dijo: ¿Ya sabe tu papá que estás aquí?
+							Le respondí: “No, si le digo, me va a decir que no” - Y ¿Por qué
+							me vienes a ver a mí? - Porque tú eres mi tío y me vas a ayudar a
+							ser reportero. Entonces entré a esa edad, al área de sociales, que
+							normalmente es el área más fea de un periódico, tienes que cubrir
+							“quince años” y otra cosa así, y ahí me inicié. La idea que
+							saliera yo a reportear, hacía yo foto, iba con un fotógrafo
+							conmigo y cubría yo osas de tipo social, eso en secundaria, y me
+							quedé en ese periódico hasta terminar la prepa y en el propio
+							periódico pasé del área sociales a deportes, de deportes a nota
+							roja, y de nota roja a información general, que es la primera
+							sección del periódico donde ya empiezas a tener algo de
+							importancia y peso en un medio de comunicación y, de todos modos
+							estaba muy chavo, porque tenía 16 o 17 años cuando entré a
+							información general. En esos tiempos, a diferencia de lo que hacen
+							ustedes en “diseño multimedia”, en esos tiempos los periódicos
+							eran muy artesanales, entonces los mismos reporteros teníamos la
+							obligación de formar planas del periódico. Cuando estaba yo en
+							deportes, tenía que escribir, escoger mis fotos, hacer cabezas y
+							pies de foto, cosas que le tocaban a los de redacción, pero
+							también había unas hojas donde tenías que diagramar la formación
+							de la plana que te tocaba, entonces tu “diseñabas”, sin tener idea
+							de diseño, tu proponías cómo debía verse las planas que te tocaban
+							armar. En aquél entonces cuando estaba yo en deportes, el toro
+							Valenzuela estaba triunfando en Los dodgers de Los Ángeles, y Hugo
+							Sánchez jugaba en el atlético de Madrid; como era parte del
+							periódico de la Organización Editorial Mexicana, había un telefax
+							que iba mandando información poco a poco desde El Sol de México,
+							información que tú podías tomar para tus propias planas. Pero si
+							yo me esperaba a que terminara un partido de Toro Valenzuela a las
+							ocho de la noche en Los Ángeles, atrasaba yo toda la edición del
+							periódico, entonces prefería ver el partido y aventarme yo la nota
+							antes de que llegara la del Sol de México, porque inclusive el
+							telefax se tardaba horas en llegar y podía inclusive hasta
+							interrumpirse porque las comunicaciones entonces eran terribles,
+							no habían ni computadoras ni internet ni los recursos de ahora.
+							Entonces yo me aventaba mis notas y trataba de terminarlas antes
+							para cerrar mis planas y pasarlas al área de información para que
+							empezaran el proceso. Yo era muy quisquilloso con mis planas y mis
+							notas, por eso, si terminaba pronto y me iba a cualquier cosa,
+							regresaba más tarde para ver cómo iba ya la parte de los positivos
+							de las notas, en un aparato iban saliendo las tiras, para ir
+							haciendo el negativo del tamaño original de la información, una
+							vez que se hacían esos positivos se le sacaba una placa para hacer
+							negativos, y éstos poderlos meter a las prensas para que se
+							empezara a imprimir el periódico. Entonces iba yo todo el tiempo
+							cómo iba todo, porque alguien a quien no le importase la
+							información, podía cortar tu reportaje para que cupiera en la
+							formación que tú habías ideado en esos formatos. Entonces, justo,
+							yo empecé a trabajar como reportero antes de estudiar periodismo,
+							y terminando la prepa, mi objetivo era migrar a la Ciudad de
+							México y estudiar algo relacionado a los medios de comunicación ,
+							y sobre todo, como ya había estado cuatro años trabajando en un
+							periódico impreso, no me interesaba mucho volver a trabajar en
+							impresos, me interesaba mucho los electrónicos, por eso la escuela
+							que escogí, cuya carrera era periodismo y arte en radio y
+							televisión, me iba a dar la posibilidad de aprender cosas de lo
+							mismo, y esa escuela estaba muy vinculada a Televisa Nacional, los
+							dueños de esa escuela eran Guillermo Pérez Verduzco, quién era
+							reportero de noticieros de Televisa, un reportero muy famoso
+							entonces, y Ofelia Guilmáin, que era actriz y directora de teatro.
+							Y desde el principio, como estudié en esa escuela, tuve la
+							posibilidad de que mis maestros, o muchos de ellos, eran personas
+							que trabajaban en Televisa Chapultepec noticias, y así mismo yo
+							hacer mis prácticas en Televisa Chapultepec, y muy pronto me
+							contrataron y empecé a trabajar en el área de producción, lo cual
+							me interesaba mucho, como ya había sido reportero, no quería
+							quedarme ahí, quería aprender más cosas, entonces la oportunidad
+							se dio en producción y dije “esto está perfecto”. Fui en televisa
+							México asistente de dirección, asistente de producción,
+							coordinador de producción, editor de noticiario, pos productor y
+							director de cámaras. Por la parte de administración de empresas no
+							creas que pasó por mi mente como parte de mi proyecto de vida. Más
+							tarde fui creciendo y eventualmente me tuve que encargar de
+							negocios de televisión y meterme a la administración y a los
+							números, estados de resultados, balances financieros, impuestos y
+							todo lo demás que fui aprendiendo sobre el camino, pero realmente
+							nunca estudié para eso.
+						</p>
+						<p class="post-text">
+							Pues sí, se le nota el gusto por el periodismo, por informar a la
+							gente y es curioso saber qué hace administración de empresas, fue
+							el periodismo lo que lo motivó.
+						</p>
+						<p class="post-text">
+							Fue periodismo y los medios de comunicación lo que me motivó y, a
+							final de cuentas, mi carrera profesional siempre ha estado
+							vinculada a los medios. Hoy soy director de un grupo empresarial y
+							tengo que ver muchas más tareas que no tienen que ver con medios
+							de comunicación y que las fui aprendiendo sobre la marcha, por
+							ejemplo, gran parte de mi tiempo está dedicado a ventas y
+							resultados de objetivos, de los negocios, que no tienen que ver
+							con comunicación, pero al final del día en mi carrera, si yo no
+							daba el salto, de ser periodista o productor de programas de
+							televisión, a director del canal y entonces encargarme de otras
+							áreas como la administración, las ventas y demás, yo siento que me
+							hubiera quedado estancado siempre haciendo lo mismo, que lo que
+							quería yo era hacer ,más cosas. Sí me había propuesto en la vida
+							ser director de un canal de televisión cerca de los 30 años, y el
+							primer canal, digamos, que dirigí, ya con el nombre de director,
+							fue TV Azteca en Oaxaca. Cuando yo llego Puebla en el 97, invitado
+							por Raimundo Alonso, mi jefe actual, que es un empresario poblano
+							muy exitoso, me contrataron como director de producción de
+							noticias y operaciones, entonces yo me encargué de armar toda la
+							parte del canal de televisión. Me encargué del equipamiento del
+							canal, definir dónde se iba a hacer el canal, que decidimos que
+							fuera en La Juárez, contratar al personal de noticias, producción
+							y operaciones y echar a andar los noticiarios de TV Azteca Puebla
+							entonces. Mi segunda oportunidad en este grupo fue cuando Raimundo
+							Alonso toma la concesión de TV Azteca en Oaxaca y me nombra
+							director de TV Azteca Oaxaca, me voy a vivir a Oaxaca y a repetir
+							lo mismo, pero como ahora era director, también tenía que buscar
+							armar el equipo de administración, equipo de ventas… y fue así la
+							primera vez que tuve oportunidad de empezarme a involucrar en
+							cosas que en ese momento no sabía. Lo que sí sabía, era, y me
+							había entrenado para ello, en medios de comunicación, sobre todo
+							en televisión, entonces me parecía un reto, pero tampoco tan
+							difícil aprender otras áreas de un canal de televisión que creía
+							que podía aprender y manejar como la administración y las ventas.
+						</p>
+						<p class="post-text">
+							Muy bien, en esto que estamos comentando sobre el proceso de armar
+							los canales de televisión, se hizo aquí en Puebla, en Oaxaca, y
+							también sabemos que se hizo en Tabasco y Veracruz ¿Cierto?
+						</p>
+						<p class="post-text">
+							Sí, se hizo Puebla en el 97, Oaxaca en enero del 2000,
+							Coatzacoalcos, Veracruz en 2001, y Tabasco también en 2001. Y esos
+							son os canales que de entrada a mí me toca abrir con Raimundo
+							Alonso como concesionario de TV Azteca. En 2004, Raimundo le
+							compra a Ricardo Salinas Pliego, un canal de televisión en El
+							Salvador, Centroamérica. Ese canal ya existía, ya transmitía
+							programación, entonces se lo compra Raimundo a Salinas Pliego, y
+							ahí me tocó hacer toda una reingeniería de ese negocio, evaluar
+							qué se estaba haciendo bien y mal, buscar mejorar la programación,
+							evaluar a la gente que estaba, contratar a la que faltaba, hacer
+							la reingeniería de Canal 12. Allá, inclusive, compramos un terreno
+							en San Salvador y construimos un canal de televisión exprofeso
+							para ese canal, porque cuando lo compramos, estaba en un sitio
+							rentado, un edificio que además estaba espantoso. Construimos el
+							edificio, reequipamos ese canal de televisión, hicimos toda la
+							reingeniería de programación, de personal, de administración, de
+							ventas y nos fue muy bien. Y en 2007 se compró una empresa que
+							tenía el título de concesión de un canal en costa Rica, pero sólo
+							tenía el título de concesión, no tenía ni edificio, ni equipo,
+							personal, nada. Ahí tuvimos que montar un canal desde ceros
+							completito. Buscar personal en tres, cuatro cerros del país para
+							montar casetas de torres de transmisión, antenas, todo lo que se
+							tiene que hacer para un canal funcione, eso lo hicimos en 2007, y
+							salió al aire en 2011 y esa fue la historia que me tocó vivir en
+							canales de televisión desde que llegué a Puebla, desde 1997 hasta
+							ahora 2022 que sigo dando lata en este grupo empresarial.
+						</p>
+						<p class="post-text">
+							Está padrísimo, por lo que estamos escuchando, siempre ha tenido
+							una dedicación bien, bien fuerte, donde siempre se sujetó o aferró
+							a lo que deseaba, siempre involucrado en los medios no sólo aquí
+							en la República, ya trascendió, ya fue mucho más para allá, y eso
+							la verdad habla muchísimo de una persona y su carrera.
+						</p>
+						<p class="post-text">
+							Sí, yo creo que todos los seres humanos tenemos que ponernos metas
+							y decir “yo quiero a tal edad, cumplir un sueño” y luego a tal
+							edad hacer, o tener este otro puesto, o involucrarme en otra cosa.
+							Pero también la vida te va llevando hacia cosas que nunca pensaste
+							que iban a suceder. Cuando yo llegué en 1997 a vivir a Puebla, a
+							trabajar con Raimundo Alonso, había que poner al aire los
+							noticiarios de TV Azteca en Puebla, se llamaban “Hechos Puebla”; y
+							cuando platiqué con Raimundo Alonso, le dije: “Oye, lo que
+							quieres, lo que me estás pidiendo que yo haga, yo te lo saco en 2
+							años, y te lo voy a dejar, caminando como reloj y después de 2
+							años, yo me voy a aburrir, no voy a tener nada más que hacer,
+							entonces si te parece bien, me comprometo a lo que me estás
+							pidiendo y te lo dejo perfecto en ese tiempo”. Yo no sabía que
+							después de esos 2 años él iba a tomar la concesión en Oaxaca, y no
+							sabía que después tomaría la de Tabasco o la de Veracruz, y no
+							sabía que iba a comprar el Canal 12 en El Salvador a Ricardo
+							Salinas Pliego, y no sabía que a mí me iba a tocar buscar otras
+							concesiones en Centroamérica porque, hicimos el de Costa Rica,
+							pero estuvimos a punto de comprar uno en Guatemala, que se segó
+							por algo, estuvimos a punto de comprar uno en Honduras, que
+							tampoco llegamos a un acuerdo. Pero ya estando en Centroamérica,
+							la idea era crecer ahí mismo, pero cuando yo llegué en el 97 a
+							trabajar con él aquí, yo no podía prever ni pensar que eso iba a
+							suceder ¿No? Entonces, se necesita estar concentrado en lo que
+							haces, ponerte metas, pero también se necesita tener suerte, que
+							las cosas se vayan dando, que la vida te vaya llevando y
+							orientando hacia cosas que no tenías en tu proyecto de vida, cosas
+							que no tenías previsto que podían suceder. La vida también te va
+							dando oportunidades que tomas o no tomas. Hay gente que yo
+							conozco, que lleva 30 años siendo camarógrafo de estudio o En
+							Televisa Chapultepec en México que nunca pensaron en hacer algo
+							más, yo respeto eso, y esas personas pueden ser muy felices y
+							haber logrado sus sueños, yo siempre fui muy inquieto y siempre
+							buscaba más, pero también se necesita que la vida te vaya poniendo
+							posibilidades de crecimiento, y que tú te vayas atreviendo a
+							tomarlas y hacerlas.
+						</p>
+						<p class="post-text">
+							Claro. Regresando al país, es sabido que hizo negociaciones con
+							empresas de telefonía celular. ¿Con qué marcas ha negociado? Y ¿en
+							qué consisten estas negociaciones?
+						</p>
+						<p class="post-text">
+							Mira, cuando Raimundo era socio operador de TV Azteca, en ese
+							entonces Ricardo Salinas Pliego creó una empresa de telefonía
+							celular que se llama Unefón, y como la toma Ricardo Salinas y
+							Raimundo hacía negocio con él y estábamos en esa cobertura,
+							Ricardo lo invita a ser distribuidor de Unefón para esas plazas.
+							Raimundo decide entrarle, y yo, para ese entonces ya era director
+							del grupo empresarial de Raimundo, me dice, “oye, ahora vamos a
+							entrar al negocio de telefonía celular”. Nuevamente, sin saber
+							mucho del tema, tuve que entrarle, aprender, investigar y ponerme
+							a trabajar. Fuimos uno de los distribuidores más grandes de
+							Unefón, en eso llega a México Movistar, que no era de Ricardo
+							Salinas, pero como ya éramos distribuidores de telefonía celular,
+							fuimos a tocar la puerta para ver si había posibilidad de también
+							vender Movistar, y así también nos convertimos en distribuidores,
+							ya teníamos a Unefón y Movistar. Entonces Ricardo Salinas compra
+							Iusacell, por lo que ya eran tres empresas de telefonía celular.
+							Llegamos a tener tiendas y distribución desde Monterrey hasta
+							Cozumel de las tres empresas, y nos mantuvimos como distribuidores
+							en todo el país. Y fue así como me tocó ayudarlo a Raimundo a
+							desarrollar esa red de distribución de telefonía. Nuevamente con
+							algo que no estaba en “el guion”, y que fue una oportunidad
+							empresarial que se presentó, entramos a ese negocio, y a mí de
+							director me tocó operar parte de ese negocio y hacer la ejecución
+							de trabajo. Pero a final de cuentas fue nuevamente así, cosas que
+							van apareciendo en el camino y a las que le tienes que entrar
+							porque trabajas en un grupo empresarial y tienes que hacer lo que
+							se te indica también, al fin de cuentas el empresario dueño es él,
+							y es un hombre muy agresivo en los negocios, y yo resulté con mi
+							experiencia, bueno ejecutando cosas. Llevándolas a cabo y tratando
+							que sucedan. Así fue como me involucré en la telefonía celular,
+							Raimundo me dio chance de entrarle a eso, y también estuvo muy
+							interesante y muy divertido.
+						</p>
+						<p class="post-text">
+							Por supuesto. Y dentro del grupo de AS Media, siendo el director
+							general, ya lo comentábamos, tiene muchísimas responsabilidades,
+							están las audiovisuales, está la parte automotriz con bastante
+							relevancia, están en Audi Puebla, Audi Veracruz, manejan un par de
+							páginas de consultoría de imagen, El Toper, que también se dedica
+							difundir información. ¿Cómo lleva a cabo usted la parte
+							administrativa? ¿Es demasiada chamba? ¿Tiene mucho equipo lo
+							ayuda? ¿Lo disfruta? ¿Cómo está todo esto?
+						</p>
+						<p class="post-text">
+							Mira, y tengo siempre que referirme a Raimundo Alonso, como
+							presidente del Grupo AS Media, porque al final de cuentas, y como
+							les comenté, yo vine a trabajar con él para cuestiones de
+							comunicación y televisión, y luego se han ido dando oportunidades
+							de que él mismo me involucre y me dé chance de meterme en otros
+							negocios distintos a la comunicación. Él, su padre y su familia
+							fueron distribuidores de coches por muchísimos años, en el pasado
+							él tuvo en Puebla agencias de Chrysler, de Nissan, entonces ha
+							estado involucrado en la venta de coches desde hace muchos años.
+							No recuerdo el año, pero hubo la oportunidad, había un
+							distribuidor que era poblano de Audi y de Porsche, que por alguna
+							razón dejó de serlo, y se abrió la posibilidad que Audi y Porsche
+							México estaba buscando un nuevo distribuidor o distribuidores en
+							puebla. Cuando nosotros nos enteramos de eso, fuimos a tocarles la
+							puerta, para decirles que teníamos experiencia en los coches y
+							queremos buscar la forma de ser distribuidores. Entonces se abrió
+							una especie de proceso de selección de parte de ambas empresas
+							buscando distribuidores de sus marcas para Puebla. Entraron
+							algunos empresarios que se dedicaban también a los coches con
+							otras marcas, y cada uno de los grupos automotrices, tuvimos que
+							presentar una propuesta para convencer a Audi por un lado y a
+							Porsche por el otro, porque aunque los dos perteneces a
+							Volkswagen, cada una de sus marcas se maneja con un director
+							distinto con una estructura diferente. Nosotros presentamos
+							propuestas a ambos, para buscar ser los concesionarios de esas dos
+							marcas en Puebla. Al final del día decidieron que Raimundo fuera
+							el concesionario de Audi y Porsche en el estado. De esta forma se
+							empezó a hacer un nuevo negocio. Cuando le dan la comisión a
+							Raimundo, una de las condiciones o requisitos que ponían ambas
+							empresas, es que se debían poner las agencias en Vía Atliscayotl.
+						</p>
+						<p class="post-text">
+							¿Disfruta de estar a cuadro y dar noticias o prefiere estar tras
+							bambalinas?
+						</p>
+						<p class="post-text">
+							Yo la verdad no estoy a cuadro ni doy noticias, yo siempre he
+							trabajado en backstage, detrás de cámaras. Hay una anécdota muy
+							buena, en 2011 en Costa Rica, todo el equipo técnico, era nuevo,
+							recién comprados, y teníamos que poner al aire el canal de
+							televisión. Y algo que yo propuse era que en vez de buscar a gente
+							ya preparada y con experiencia, buscáramos a chavos recién salidos
+							de la carrera y entrenarlos para el trabajo. Yo no quería a gente
+							con experiencia porque ellos tienden a tener vicios de trabajo,
+							ser conflictivos, entonces la apuesta fue buscar a jóvenes recién
+							egresados sin experiencia y enseñarles a hacer televisión. Cuando
+							hicimos ese proceso, de capacitar a chavos desde cero, y fue
+							cuando se me ocurrió hacer una universidad para formarlos nosotros
+							y que tengan éxito en los medios de comunicación. Entonces,
+							volviendo a la anécdota en Costa Rica, el primer día, octubre 11,
+							la programación empezaba a las 7:00 de la noche, con un programa
+							especial de dos horas donde se iban a presentar avances de los
+							programas que se estaban produciendo nacionalmente, una especie de
+							presentación donde se mostraba el menú de programación. Cómo la
+							gente que habíamos contratado era nueva, sin experiencia, no
+							querían hacer un programa en vivo, les daba muchos nervios
+							hacerlo, y me pidieron que lo dirigiera yo. Habíamos dispuesto una
+							pantalla con una cuenta regresiva que cuando llegaba a 0 tenía que
+							empezar la transmisión al aire, entonces, estaba ese downcounter
+							en los últimos segundos, cuando la señal se va del aire, yo empecé
+							a gritar un poco, en lo que los ingenieros estaban de arriba para
+							abajo, y así como se fue del aire, luego de 30-40 segundos, de
+							repente regresó la señal, entonces yo regresé a cabina y todo
+							salió muy bien. Fue una experiencia maravillosa, no todos los días
+							ves nacer un canal de televisión en el mundo.
+						</p>
+						<img class="post-img" src="./assets/asmedia.jpg" alt="Imagen Fachada AsMedia">
+						<p class="post-text">
+							Muy interesante, son cosas que pasan en el momento y se deben
+							corregir pese a la situación. Acabamos de tocar temas
+							interesantes, hablábamos de profesionalismo, utilidad, cosas
+							características de una universidad, usted lo propuso y lo
+							consiguió, se puso una universidad, desde lo que nos platicó es
+							obvio que las tres licenciaturas que ofrece esta escuela son
+							precisamente para formar a los jóvenes y que salgan bien
+							preparados para el mundo de los medios de comunicación. ¿significa
+							esto que hay expectativa de los egresados?
+						</p>
+						<p class="post-text">
+							Si claro, lo primero que tuvo que ocurrir para que naciera la
+							universidad, vino del razonamiento de que, si ya estamos
+							capacitando gente, hay que formalizarlo, y me puse a investigar
+							con el entonces con el rector de la BUAP Enrique Doger, si
+							podíamos hacer una universidad incorporada a la BUAP, Enrique
+							Doger me ayudó para orientarme a ver cómo se podía hacer, sin
+							embargo decidí no seguir ese camino porque al estar incorporada a
+							la BUAP, el plan de estudios debía ser idéntico a Ciencias de la
+							Comunicación, y yo siempre criticaba que las carreras afines a la
+							comunicación, no tenían un plan de estudios efectivo, eficiente y
+							contundente, que ayudara a los chavos a formarse en un medio
+							educativo práctico. Entonces deseché esa idea, y busque al
+							secretario de educación de entonces, Carlos Alberto Julián y
+							Nacer, y le pedí lo mismo, que quería hacer una licenciatura en
+							televisión, la primera que queríamos hacer, ¿Cuál es el camino que
+							debemos seguir? Con un equipo especializado y asesorando,
+							empezamos a formar un plan de estudios y se lo presentábamos a la
+							autoridad para ver hasta dónde nos dejaban hacer un pan de
+							estudios ideal que cumpliera nuestro sueño de formar a chicos en
+							televisión de manera eficiente. Logramos entonces hacer ese plan
+							de estudios diferente a las diferentes universidades, y nos
+							autorizaron toda la currícula del plan de estudios que estábamos
+							proponiendo hacer. Así logramos tener la licenciatura en
+							televisión, el primer registro de valides oficial para que
+							nuestros estudios fueran oficialmente válidos y pudieran egresar
+							los chavos con una licenciatura avalada por la secretaría de
+							educación pública. Así se dio forma a la primera licenciatura. Las
+							otras dos salieron más fáciles, teniendo ya experiencia en ello.
+							Con el paso del tiempo hemos ido cambiando los planes de estudio y
+							hemos ido perfeccionando con el tiempo. Esto se mide buscando que
+							tus egresados tengan éxito en el mercado laboral, y si es así con
+							todas las generaciones, significa que los preparaste bien, hoy en
+							día, en medios de comunicación, despachos de diseño, o lugares
+							especializados en gestión de imagen, nuestros chavos han tenido
+							éxito laboralmente.
+						</p>
 
-  <header class="header">
-    <div class="wrapper">
-      <section class="">
-        <h1 class="hero-title">Del Periodismo a la Cima Empresarial</h1>
-        <p>Pedro Cabañas Reynal</p>
-      </section>
-    </div>
-  </header>
+						<p class="post-text">
+							Y hablando de los medios de comunicación ¿Cómo se espera que se
+							desarrolle la difusión de información ahora que vivimos en pleno
+							auge de la era de comunicación digital, donde las redes sociales
+							tienen un fuerte papel en la difusión de “noticias”?
+						</p>
+						<p class="post-text">
+							En el temblor del 19 por ejemplo, tiembla y la gente buscó de
+							inmediato información en redes de lo que pasaba, el problema es
+							que tanto internet, como celulares, datos en general se salieron
+							del aire, afectados por el propio temblor, entonces la gente no
+							encontraba información en redes, ¿Qué hicieron para estar
+							informados? Prendieron la televisión y sintieron confianza y
+							seguridad ver la información que publicaban los noticieros de
+							televisión abierta, así, cuando tienes duda sobre algo, prendes la
+							tele. Tengo colegas que dicen “yo ya sólo me informo por twitter,
+							Instagram o Facebook, ya no veo la tele, pero en las noches si
+							prendo el noticiero de TV abierta” ¿Para qué lo prendes si solo te
+							informas por redes? “para ver si lo que dicen en redes es cierto o
+							no es cierto”. Lo que significa que los medios tradicionales, les
+							dan más confianza a la gente que las propias redes sociales. Todos
+							sabemos que hay muchas ‘fake news’ entonces, lees esas noticias
+							falsas y en seguida te pasas al twitter de Juan Carlos Valerio,
+							porque tú tienes confianza en que él dice la verdad, y te das
+							cuenta que si en fake news había una balacera en el zócalo, vas
+							con Valerio, otro periodista u otro medio, y te enteras que no fue
+							cierto. Entonces ¿Cómo se combaten las fake news? Diciendo la
+							verdad. Y logrando que las audiencias crean en ti. Una de las
+							cosas más importantes para los medios de comunicación es tener
+							credibilidad, si no, no sirve para nada. Puede que busques a
+							influencers, celebridades y youtubers para tener información, y si
+							corroboraste que es verídico, les sigues creyendo, pero en caso
+							que no, siempre vamos a buscar los medios tradicionales que dicen
+							la verdad
+						</p>
+						<p class="post-text">
+							Con lo que ya nos había contado sobre la universidad, ¿Qué otros
+							proyectos tiene a futuro?
+						</p>
+						<p class="post-text">
+							Respecto a AS Media, tenemos el reto de poder hacer, otros
+							programas de educación, distintos, otras carreras, muchos de ellos
+							hacerlos en línea, y cada uno de ellos, que tengan la posibilidad
+							de hacer prácticas profesionales que sean reales. Ahora en Junio
+							empezó el diplomado en marketing digital, es en línea, y debe
+							tener proyectos profesionales que sean útiles para la vida
+							profesional de aquellos que tomen los proyectos. Nosotros en AS
+							Media siempre buscaremos proyectos que sirvan para el futuro de
+							las personas que se están preparando con nosotros. Una vez me dijo
+							un profesor en la escuela de periodismo, donde estudié en México:
+							“la formación se logra una vez que olvidaste todo lo que
+							aprendiste en la escuela” es decir, cuando estás formado es cuando
+							ya sabes cómo hacer las cosas intuitivamente.
+						</p>
+						<p class="post-text">
+							Por supuesto, ya acercándose la conclusión de nuestra sesión. Como
+							empresario ¿Cuál sería su consejo a nosotros, la gente que venimos
+							fresca, las nuevas promesas, que estamos nerviosas por no saber
+							qué hacer después de estudiar?
+						</p>
+						<p class="post-text">
+							Tienen que tener muy en claro a qué se quieren dedicar, por un
+							lado tienen la posibilidad de emplearse en algún trabajo, o
+							emprender en negocios propios en las carreras que se hayan
+							estudiado. En ambos casos hay que saber elegir para tener un buen
+							trabajo, que te de posibilidades de seguir aprendiendo y de
+							crecimiento, además de que te paguen lo mejor posible. En algunas
+							cosas que he aprendido, relacionado a cuestiones empresariales
+							hice un diplomado sobre “alta dirección” donde aprendí muchas
+							cosas, como que las personas que trabajan en un trabajo, sólo lo
+							trabajan un 10% por el sueldo, y todo el otro 90% tiene que ver
+							con sentirse orgulloso, útil, estar en un buen ambiente de
+							trabajo, tener posibilidad de crecimiento. Entonces, todos ustedes
+							que están empezando, tienen que buscar tanto trabajos en el
+							mercado laboral, como emprendiendo, haciendo cosas que nos
+							satisfagan, que nos hagan felices, que nos llenen. Trabajando
+							donde verdaderamente se sientan orgullosos y satisfechos,
+							ilusionados por el futuro. Algo que es muy importante para
+							cualquier camino que tomen, algo que les decimos siempre al
+							principio cuando se unen a AS Media, es que tienen que conocer sus
+							habilidades y competencias al 100%, saber para qué son buenos, y
+							dedicarse a eso donde están sus fortalezas.
+						</p>
+						<p class="post-text">
+							Muy cierto. Y ya para finalizar, relacionado a lo último que
+							comentamos, respecto a su vida, Si pudiera poner en 1 o 2
+							palabras, ¿Qué es aquello que más lo ha enriquecido, que lo haya
+							ayudado a crecer y que lo haga sentir orgulloso de la persona que
+							se ha formado?
+						</p>
+						<p class="post-text">
+							Yo creo que tiene que ver con valores, y cosas que me han llevado
+							a ser una persona exitosa en mi trabajo, en lo que se hacer, han
+							sido: la honestidad, el trabajo y dedicación, tratar siempre de
+							hacer bien las cosas que me encargan, saber trabajar en equipo,
+							ser una buena persona en el trabajo y en la vida, y sobre todo,
+							buscar ser feliz, esforzándose en alcanzar objetivos, ayudando a
+							otras personas, yo creo que eso es lo que te hace ser un buen ser
+							humano y ser bueno en aquello a lo que te dedicas.
+						</p>
+						<p class="post-text">
+							Excelente. Un gran final para esta sesión. De parte de todos en
+							Cátedra Nueve le agradecemos estos momentos, por este este
+							diálogo. Escucharlo ha sido una experiencia visual y auditiva muy
+							rica, nosotros nos quedamos con todo lo mejor que nos ha dicho
+							durante el tiempo que nos prestó. Le agradecemos muchísimo
+						</p>
+						<p class="post-text">
+							Gracias a ustedes, y ojalá sirva para algo útil, en esta ocasión
+							donde les compartí algo de lo que he vivido y lo que he aprendido.
+							Les deseo mucho éxito a Catedra Nueve en este nuevo emprendimiento
+							que están haciend
+						</p>
+					</div>
+				</section>
+			</div>
 
-  <main class="main">
-    <div class="wrapper">
-      <section class="post" id="post">
-        <div class="post-item">
-          <h2 class="post-title">De qué va?</h2>
-          <p class="post-text">
-            Una revista donde convergen el arte digital, la innovación
-            tecnológica y la moda. Exploramos las últimas tendencias del
-            diseño multimedia, la consultoría de imagen y la producción
-            audiovisual.
-          </p>
-        </div>
-      </section>
-    </div>
+			<div class="wrapper">
+				<section class="contact" id="contact">
+					<h2 class="contact-title">TocToc!</h2>
+					<p class="contact-text">
+						Tu opinión es muy importante para nosotros. Escríbenos un mensajito
+						por Whatsapp y cuéntanos que te ha parecido la revista.
+					</p>
+					<a class="contact-button button-secondary" href="#">whatsapp</a>
+				</section>
+			</div>
+		</main>
 
+		<footer class="fullwidth">
+			<div class="footer">
+				<div class="footer-brand">
+					<img
+						class="footer-img"
+						src="../../../assets/icons/logotipo-ENFOCO.svg"
+						alt="Logotipo ENFOCO"
+					/>
+				</div>
+				<div class="footer-menus">
+					<div class="footer-menu-1">
+						<a class="footer-menu-link" href="../../../index.html">
+							<img
+								class="footer-menu-icon"
+								src="../../../assets/icons/house-icon.svg"
+								alt="Icono Inicio"
+							/>
+							Inicio</a
+						>
+						<a class="footer-menu-link" href="../../../index.html#about">
+							<img
+								class="footer-menu-icon"
+								src="../../../assets/icons/about.svg"
+								alt="Icono Inicio"
+							/>
+							Acerca de</a
+						>
+						<a class="footer-menu-link" href="../../../index.html#team">
+							<img
+								class="footer-menu-icon"
+								src="../../../assets/icons/team.svg"
+								alt="Icono Directorio"
+							/>
+							Team</a
+						>
+					</div>
+					<div class="footer-menu-2">
+						<a class="footer-menu-link" href="#">
+							<img
+								class="footer-menu-icon"
+								src="../../../assets/icons/privacy-icon.svg"
+								alt="Icono Politicas y Privacidad"
+							/>
+							Politicas y Privacidad</a
+						>
+						<a class="footer-menu-link" href="#">
+							<img
+								class="footer-menu-icon"
+								src="../../../assets/icons/conditions-icon.svg"
+								alt="Icono Términos y condiciones"
+							/>
+							Términos y Condiciones</a
+						>
+					</div>
+				</div>
 
+				<div class="footer-social">
+					<a
+						class="footer-social-item"
+						href="https://www.facebook.com/people/RevistaENFOCO/61559283003463/?mibextid=LQQJ4d"
+						target="_blank"
+					>
+						<svg
+							class="footer-social-icon"
+							viewBox="0 0 32 32"
+							fill="none"
+							alt="Icono Facebook"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM13.2083 24.9143V16.0762V15.9238H11.6339C11.497 15.9238 11.4286 15.8476 11.4286 15.6952V12.9524C11.4286 12.8 11.497 12.7238 11.6339 12.7238H13.2083V10.1333C13.2083 8.30476 14.6458 6.85714 16.4256 6.85714H19.4375C19.5744 6.85714 19.6429 6.93333 19.6429 7.08571V9.75238C19.6429 9.90476 19.5744 9.98095 19.369 9.98095H17.5893C17.1101 9.98095 16.7679 10.3619 16.7679 10.819V12.7238H19.3006C19.4375 12.7238 19.506 12.8 19.506 12.9524L19.3006 15.6952C19.3006 15.8476 19.2321 15.9238 19.0952 15.9238H16.7679V24.9143C16.7679 25.0667 16.6994 25.1429 16.5625 25.1429H13.4137C13.2768 25.1429 13.2083 25.0667 13.2083 24.9143Z"
+							/>
+						</svg>
+					</a>
+					<a
+						class="footer-social-item"
+						href="https://www.instagram.com/revista.enfoco/"
+						target="_blank"
+					>
+						<svg
+							class="footer-social-icon"
+							alt="Icono Instagram"
+							viewBox="0 0 32 32"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM20.5714 16C20.5714 18.5247 18.5247 20.5714 16 20.5714C13.4753 20.5714 11.4286 18.5247 11.4286 16C11.4286 13.4753 13.4753 11.4286 16 11.4286C18.5247 11.4286 20.5714 13.4753 20.5714 16ZM19.0476 16C19.0476 17.6831 17.6831 19.0476 16 19.0476C14.3168 19.0476 12.9524 17.6831 12.9524 16C12.9524 14.3168 14.3168 12.9524 16 12.9524C17.6831 12.9524 19.0476 14.3168 19.0476 16ZM20.5714 10.6667C20.1506 10.6667 19.8095 11.0078 19.8095 11.4286C19.8095 11.8494 20.1506 12.1905 20.5714 12.1905C20.9922 12.1905 21.3333 11.8494 21.3333 11.4286C21.3333 11.0078 20.9922 10.6667 20.5714 10.6667ZM7.61905 14.9333C7.61905 12.3731 7.61905 11.093 8.1173 10.1151C8.55558 9.25492 9.25492 8.55558 10.1151 8.1173C11.093 7.61905 12.3731 7.61905 14.9333 7.61905H17.0667C19.6269 7.61905 20.907 7.61905 21.8849 8.1173C22.7451 8.55558 23.4444 9.25492 23.8827 10.1151C24.381 11.093 24.381 12.3731 24.381 14.9333V17.0667C24.381 19.6269 24.381 20.907 23.8827 21.8849C23.4444 22.7451 22.7451 23.4444 21.8849 23.8827C20.907 24.381 19.6269 24.381 17.0667 24.381H14.9333C12.3731 24.381 11.093 24.381 10.1151 23.8827C9.25492 23.4444 8.55558 22.7451 8.1173 21.8849C7.61905 20.907 7.61905 19.6269 7.61905 17.0667V14.9333ZM14.9333 9.14286H17.0667C18.372 9.14286 19.2592 9.14404 19.9451 9.20008C20.6132 9.25466 20.9548 9.35359 21.1931 9.47502C21.7666 9.76721 22.2328 10.2334 22.525 10.8069C22.6464 11.0452 22.7454 11.3868 22.7999 12.0549C22.8559 12.7408 22.8571 13.6281 22.8571 14.9333V17.0667C22.8571 18.372 22.8559 19.2592 22.7999 19.9451C22.7454 20.6132 22.6464 20.9548 22.525 21.1931C22.2328 21.7666 21.7666 22.2328 21.1931 22.525C20.9548 22.6464 20.6132 22.7454 19.9451 22.7999C19.2592 22.8559 18.372 22.8571 17.0667 22.8571H14.9333C13.6281 22.8571 12.7408 22.8559 12.0549 22.7999C11.3868 22.7454 11.0452 22.6464 10.8069 22.525C10.2334 22.2328 9.76721 21.7666 9.47502 21.1931C9.35359 20.9548 9.25466 20.6132 9.20008 19.9451C9.14404 19.2592 9.14286 18.372 9.14286 17.0667V14.9333C9.14286 13.6281 9.14404 12.7408 9.20008 12.0549C9.25466 11.3868 9.35359 11.0452 9.47502 10.8069C9.76721 10.2334 10.2334 9.76721 10.8069 9.47502C11.0452 9.35359 11.3868 9.25466 12.0549 9.20008C12.7408 9.14404 13.6281 9.14286 14.9333 9.14286Z"
+							/>
+						</svg>
+					</a>
+					<a
+						class="footer-social-item"
+						href="https://www.tiktok.com/@revista.enfoco"
+						target="_blank"
+					>
+						<svg
+							class="footer-social-icon"
+							viewBox="0 0 32 32"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M15.9859 32C7.07154 31.9931 -0.0206095 24.8747 4.49994e-05 15.9538C0.0206995 7.05194 7.16027 -0.0312649 16.0815 0.000103787C24.9224 0.0314725 31.9923 7.12998 32 15.9828C32.0076 24.8984 24.9017 32.0069 15.9859 32ZM16.4778 6.68011C16.4778 7.38016 16.4778 7.90119 16.4778 8.42222C16.4785 11.7374 16.4892 15.0533 16.4716 18.3684C16.4686 18.9361 16.4303 19.529 16.2651 20.0661C15.8443 21.4356 14.3985 22.2895 13.0537 22.0431C11.5742 21.7723 10.5453 20.5175 10.5882 19.0378C10.6325 17.5245 11.7119 16.3692 13.2281 16.2215C13.6557 16.1802 14.0849 16.1603 14.5546 16.1274V12.9776C10.6295 12.6011 7.53588 15.1068 7.29338 18.7548C7.07154 22.102 9.73061 25.1249 13.056 25.3047C16.7463 25.5044 19.6501 22.8281 19.7144 19.1304C19.7488 17.1419 19.719 15.1519 19.7289 13.1627C19.7305 12.797 19.784 12.4313 19.8054 12.1612C21.2336 12.7373 22.5762 13.279 24.0664 13.8804C24.2966 12.5629 24.4596 11.6249 24.6378 10.6058C22.4645 10.211 21.0577 8.97079 20.0005 7.23327C19.8345 6.96013 19.3977 6.73672 19.0642 6.70382C18.2816 6.62655 17.486 6.67934 16.4755 6.67934L16.4778 6.68011Z"
+							/>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</footer>
 
-    <div class="wrapper">
-      <section class="contact" id="contact">
-        <h2 class="contact-title">TocToc!</h2>
-        <p class="contact-text">Tu opinión es muy importante para nosotros. Escríbenos un mensajito por Whatsapp
-          y
-          cuéntanos que te ha parecido la revista.</p>
-        <a class="contact-button button-secondary" href="#">whatsapp</a>
-      </section>
-    </div>
-  </main>
-
-  <footer class="fullwidth">
-    <div class="footer">
-      <div class="footer-brand">
-        <img class="footer-img" src="../../../assets/icons/logotipo-ENFOCO.svg" alt="Logotipo ENFOCO" />
-      </div>
-      <div class="footer-menus">
-        <div class="footer-menu-1">
-          <a class="footer-menu-link" href="../../../index.html">
-            <img class="footer-menu-icon" src="../../../assets/icons/house-icon.svg" alt="Icono Inicio" />
-            Inicio</a>
-          <a class="footer-menu-link" href="../../../index.html#about">
-            <img class="footer-menu-icon" src="../../../assets/icons/about.svg" alt="Icono Inicio" />
-            Acerca de</a>
-          <a class="footer-menu-link" href="../../../index.html#team">
-            <img class="footer-menu-icon" src="../../../assets/icons/team.svg" alt="Icono Directorio" />
-            Team</a>
-        </div>
-        <div class="footer-menu-2">
-          <a class="footer-menu-link" href="#">
-            <img class="footer-menu-icon" src="../../../assets/icons/privacy-icon.svg"
-              alt="Icono Politicas y Privacidad" />
-            Politicas y Privacidad</a>
-          <a class="footer-menu-link" href="#">
-            <img class="footer-menu-icon" src="../../../assets/icons/conditions-icon.svg"
-              alt="Icono Términos y condiciones" />
-            Términos y Condiciones</a>
-        </div>
-      </div>
-
-      <div class="footer-social">
-        <a class="footer-social-item"
-          href="https://www.facebook.com/people/RevistaENFOCO/61559283003463/?mibextid=LQQJ4d" target="_blank">
-          <svg class="footer-social-icon" viewBox="0 0 32 32" fill="none" alt="Icono Facebook"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM13.2083 24.9143V16.0762V15.9238H11.6339C11.497 15.9238 11.4286 15.8476 11.4286 15.6952V12.9524C11.4286 12.8 11.497 12.7238 11.6339 12.7238H13.2083V10.1333C13.2083 8.30476 14.6458 6.85714 16.4256 6.85714H19.4375C19.5744 6.85714 19.6429 6.93333 19.6429 7.08571V9.75238C19.6429 9.90476 19.5744 9.98095 19.369 9.98095H17.5893C17.1101 9.98095 16.7679 10.3619 16.7679 10.819V12.7238H19.3006C19.4375 12.7238 19.506 12.8 19.506 12.9524L19.3006 15.6952C19.3006 15.8476 19.2321 15.9238 19.0952 15.9238H16.7679V24.9143C16.7679 25.0667 16.6994 25.1429 16.5625 25.1429H13.4137C13.2768 25.1429 13.2083 25.0667 13.2083 24.9143Z" />
-          </svg>
-        </a>
-        <a class="footer-social-item" href="https://www.instagram.com/revista.enfoco/" target="_blank">
-          <svg class="footer-social-icon" alt="Icono Instagram" viewBox="0 0 32 32" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM20.5714 16C20.5714 18.5247 18.5247 20.5714 16 20.5714C13.4753 20.5714 11.4286 18.5247 11.4286 16C11.4286 13.4753 13.4753 11.4286 16 11.4286C18.5247 11.4286 20.5714 13.4753 20.5714 16ZM19.0476 16C19.0476 17.6831 17.6831 19.0476 16 19.0476C14.3168 19.0476 12.9524 17.6831 12.9524 16C12.9524 14.3168 14.3168 12.9524 16 12.9524C17.6831 12.9524 19.0476 14.3168 19.0476 16ZM20.5714 10.6667C20.1506 10.6667 19.8095 11.0078 19.8095 11.4286C19.8095 11.8494 20.1506 12.1905 20.5714 12.1905C20.9922 12.1905 21.3333 11.8494 21.3333 11.4286C21.3333 11.0078 20.9922 10.6667 20.5714 10.6667ZM7.61905 14.9333C7.61905 12.3731 7.61905 11.093 8.1173 10.1151C8.55558 9.25492 9.25492 8.55558 10.1151 8.1173C11.093 7.61905 12.3731 7.61905 14.9333 7.61905H17.0667C19.6269 7.61905 20.907 7.61905 21.8849 8.1173C22.7451 8.55558 23.4444 9.25492 23.8827 10.1151C24.381 11.093 24.381 12.3731 24.381 14.9333V17.0667C24.381 19.6269 24.381 20.907 23.8827 21.8849C23.4444 22.7451 22.7451 23.4444 21.8849 23.8827C20.907 24.381 19.6269 24.381 17.0667 24.381H14.9333C12.3731 24.381 11.093 24.381 10.1151 23.8827C9.25492 23.4444 8.55558 22.7451 8.1173 21.8849C7.61905 20.907 7.61905 19.6269 7.61905 17.0667V14.9333ZM14.9333 9.14286H17.0667C18.372 9.14286 19.2592 9.14404 19.9451 9.20008C20.6132 9.25466 20.9548 9.35359 21.1931 9.47502C21.7666 9.76721 22.2328 10.2334 22.525 10.8069C22.6464 11.0452 22.7454 11.3868 22.7999 12.0549C22.8559 12.7408 22.8571 13.6281 22.8571 14.9333V17.0667C22.8571 18.372 22.8559 19.2592 22.7999 19.9451C22.7454 20.6132 22.6464 20.9548 22.525 21.1931C22.2328 21.7666 21.7666 22.2328 21.1931 22.525C20.9548 22.6464 20.6132 22.7454 19.9451 22.7999C19.2592 22.8559 18.372 22.8571 17.0667 22.8571H14.9333C13.6281 22.8571 12.7408 22.8559 12.0549 22.7999C11.3868 22.7454 11.0452 22.6464 10.8069 22.525C10.2334 22.2328 9.76721 21.7666 9.47502 21.1931C9.35359 20.9548 9.25466 20.6132 9.20008 19.9451C9.14404 19.2592 9.14286 18.372 9.14286 17.0667V14.9333C9.14286 13.6281 9.14404 12.7408 9.20008 12.0549C9.25466 11.3868 9.35359 11.0452 9.47502 10.8069C9.76721 10.2334 10.2334 9.76721 10.8069 9.47502C11.0452 9.35359 11.3868 9.25466 12.0549 9.20008C12.7408 9.14404 13.6281 9.14286 14.9333 9.14286Z" />
-          </svg>
-        </a>
-        <a class="footer-social-item" href="https://www.tiktok.com/@revista.enfoco" target="_blank">
-          <svg class="footer-social-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M15.9859 32C7.07154 31.9931 -0.0206095 24.8747 4.49994e-05 15.9538C0.0206995 7.05194 7.16027 -0.0312649 16.0815 0.000103787C24.9224 0.0314725 31.9923 7.12998 32 15.9828C32.0076 24.8984 24.9017 32.0069 15.9859 32ZM16.4778 6.68011C16.4778 7.38016 16.4778 7.90119 16.4778 8.42222C16.4785 11.7374 16.4892 15.0533 16.4716 18.3684C16.4686 18.9361 16.4303 19.529 16.2651 20.0661C15.8443 21.4356 14.3985 22.2895 13.0537 22.0431C11.5742 21.7723 10.5453 20.5175 10.5882 19.0378C10.6325 17.5245 11.7119 16.3692 13.2281 16.2215C13.6557 16.1802 14.0849 16.1603 14.5546 16.1274V12.9776C10.6295 12.6011 7.53588 15.1068 7.29338 18.7548C7.07154 22.102 9.73061 25.1249 13.056 25.3047C16.7463 25.5044 19.6501 22.8281 19.7144 19.1304C19.7488 17.1419 19.719 15.1519 19.7289 13.1627C19.7305 12.797 19.784 12.4313 19.8054 12.1612C21.2336 12.7373 22.5762 13.279 24.0664 13.8804C24.2966 12.5629 24.4596 11.6249 24.6378 10.6058C22.4645 10.211 21.0577 8.97079 20.0005 7.23327C19.8345 6.96013 19.3977 6.73672 19.0642 6.70382C18.2816 6.62655 17.486 6.67934 16.4755 6.67934L16.4778 6.68011Z" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="./js/swiper-bundle.min.js"></script>
-  <script src="./js/app.js"></script>
-</body>
-
+		<script src="./js/swiper-bundle.min.js"></script>
+		<script src="./js/app.js"></script>
+	</body>
 </html>
