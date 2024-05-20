@@ -206,8 +206,9 @@ body {
   color: var(--white);
  	background-color: var(--black);
 	background-image: url('../assets/images/gradient.png');
-	background-size: cover;
+	background-size:contain;
 	background-repeat: no-repeat;
+  background-position: center;
   /* opcional */
   line-height: 1.4em;
   /* opcional */
