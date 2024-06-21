@@ -219,3 +219,64 @@
 .footer-social-icon:hover{
     color: var(--icon-social-hover);
 }
+
+/* anuncio */
+
+.anuncio-container {
+    background-color: blueviolet;
+    padding: 25 40px;
+}
+
+.anuncio-titulo-container {
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+}
+
+.anuncio {
+    background-color: var(--bgc-button-cta);
+    font-family: var(--typo-title);
+    align-items: center;
+    max-width: 143px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.titulo-anuncio {
+    background-color: aquamarine;
+    font-family: var(--typo-title);
+    color: var(--magent);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.anuncio-cuerpo-container{
+    background-color: chocolate;
+    display: flex;
+    font-family: var(--typo-body);
+    padding: 25 40px;
+}
+
+.anuncio-texto {
+    background-color: crimson;
+}
+
+.anuncio-texto-resaltado {
+    background-color: darkslateblue;
+}
+
+.anuncio-boton {
+    background-color: turquoise;
+    display: flex;
+}
+
+.imagen-anuncio { 
+    background-color: coral;
+    display: flex;
+    max-width: 569px;
+    padding: 25 40;
+    border: 25 40;
+}
+
