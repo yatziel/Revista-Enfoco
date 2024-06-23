@@ -220,63 +220,86 @@
     color: var(--icon-social-hover);
 }
 
-/* anuncio */
 
-.anuncio-container {
-    background-color: blueviolet;
-    padding: 25 40px;
+.convocatoria {
+    margin 0;
+    padding: 48px;
 }
 
-.anuncio-titulo-container {
-    background-color: red;
-    align-items: center;
-    justify-content: center;
-}
-
-.anuncio {
-    background-color: var(--bgc-button-cta);
-    font-family: var(--typo-title);
-    align-items: center;
+.convocatoria-separador {
+    background-color: var(--cyan);
+    justify-content: space-between;
+    text-align: center;
     max-width: 143px;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-}
-
-.titulo-anuncio {
-    background-color: aquamarine;
+    margin: 0 auto;
+    border-radius: 12px;
+    padding: 8px;
     font-family: var(--typo-title);
-    color: var(--magent);
-    align-items: center;
-    justify-content: center;
+    font-weight: 400;
+}
+
+.convocatoria-title {
+    margin: 0 auto;
     text-align: center;
+    max-width: 1280px;
+    line-height: 75px;
+    font-family: var(--typo-title);
+    font-weight: 500;
+    font-size: 75px;
+    padding: 48px;
+    color: var(--cyan);
 }
 
-.anuncio-cuerpo-container{
-    background-color: chocolate;
+.flex-convocatoria {
     display: flex;
+}
+
+.convocatoria-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.convocatoria-texto{ 
+    justify-content: space-between;
+    padding: 50px;
     font-family: var(--typo-body);
-    padding: 25 40px;
+    max-width: fit-content;
+    font-size: 24px;
+    line-height: 24px;
+    max-width: 50%;
 }
 
-.anuncio-texto {
-    background-color: crimson;
+.convocatoria-texto-resaltado {
+    justify-content: space-between;
+    padding: 50px 0;
+    font-family: var(--typo-body);
+    font-weight: 1000;
+    max-width: fit-content;
+    font-size: 24px;
 }
 
-.anuncio-texto-resaltado {
-    background-color: darkslateblue;
+.convocatoria-button { 
+    background-color: var(--cyan);
+    text-align: center;
+    margin: 0 auto;
+    padding: 12px;
+    font-family: var(--typo-title);
+    font-size: 24px;
+    display: flex;
+    max-width: fit-content;
+    margin: 0 12 0 12px; 
+    border-radius: 24px;
 }
 
-.anuncio-boton {
-    background-color: turquoise;
+.convocatoria-button-icon { 
+    max-width: 40px;
+    margin: 0px 12px;
+
+}
+
+.convocatoria-imagen {
+    max-height: auto;
+    max-width: 50%;
+    border-radius: 24px;
     display: flex;
 }
-
-.imagen-anuncio { 
-    background-color: coral;
-    display: flex;
-    max-width: 569px;
-    padding: 25 40;
-    border: 25 40;
-}
-
