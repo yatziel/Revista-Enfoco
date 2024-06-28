@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 
 		<!-- Stylesheets -->
-		<link rel="stylesheet" href="./css/resset.css" />
+		<link rel="stylesheet" href="./css/resset.css?01" />
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 
@@ -24,11 +24,13 @@
 		<nav class="fullwidth">
 			<div class="nav">
 				<div class="nav-brand">
-					<img
-						class="nav-img"
-						src="./assets/brand/symbol.svg"
-						alt="Símbolo Revista Enfoco"
-					/>
+					<a href="#"
+						><img
+							class="nav-img"
+							src="./assets/brand/symbol.svg"
+							alt="Símbolo Revista Enfoco"
+						/>
+					</a>
 				</div>
 				<div class="nav-container">
 					<div class="nav-container-item menu">
@@ -118,7 +120,7 @@
 						</div>
 					</div>
 					<div class="nav-container-item">
-						<a class="button-cta" href="#magazine">
+						<a class="button-cta" href="https://issuu.com/asmedia-cfp/docs/revista_enfoco_no1_digital_3" target="_blank">
 							Ver Revista
 							<svg
 								class="button-cta-img"
@@ -169,7 +171,7 @@
 								Descubre artículos fascinantes y contenido que despierta tu
 								mente. ¡Bienvenido a un mundo de lecturas que inspiran!
 							</p>
-							<a class="button-cta" href="#magazine">
+							<a class="button-cta" href="https://issuu.com/asmedia-cfp/docs/revista_enfoco_no1_digital_3" target="_blank">
 								Ver Revista
 								<svg
 									class="button-cta-img"
@@ -213,37 +215,35 @@
 			</div>
 			<div class="fullwidth">
 				<section class="magazine" id="magazine">
-					
-					<div
-						style="
-							position: relative;
-							padding-top: max(60%, 326px);
-							height: 0;
-							width: 100%;
-						"
-					>
-						<iframe
-							allow="clipboard-write"
-							sandbox="allow-top-navigation allow-top-navigation-by-user-activation allow-downloads allow-scripts allow-same-origin allow-popups allow-modals allow-popups-to-escape-sandbox allow-forms"
-							allowfullscreen="true"
-							style="
-								position: absolute;
-								border: none;
-								width: 100%;
-								height: 100%;
-								left: 0;
-								right: 0;
-								top: 0;
-								bottom: 0;
-							"
-							src="https://e.issuu.com/embed.html?backgroundColor=transparent&d=revista_enfoco_no1_digital_3&u=asmedia-cfp"
-						></iframe>
+					<div style="position:relative;padding-top:max(60%,326px);height:0;width:100%"><iframe allow="clipboard-write"
+						sandbox="allow-top-navigation allow-top-navigation-by-user-activation allow-downloads allow-scripts allow-same-origin allow-popups allow-modals allow-popups-to-escape-sandbox allow-forms"
+						allowfullscreen="true"
+						style="position:absolute;border:none;width:100%;height:100%;left:0;right:0;top:0;bottom:0;"
+						src="https://e.issuu.com/embed.html?backgroundColor=transparent&d=revista_enfoco_no1_digital_3&u=asmedia-cfp"></iframe>
 					</div>
 				</section>
 			</div>
 
 			<div class="wrapper">
-								<section class="about" id="about">
+				<!-- <section class="blog">
+					<h2 class="about-title">Blog</h2>
+					<div class="blog-container">
+						<div class="post-card">
+							<a class="post-link"
+								href="./blog/pedro-cabanas/del-periodismo-a-la-cima-empresarial"
+							>
+								<img
+									class="post-image"
+									src="./blog/pedro-cabanas/del-periodismo-a-la-cima-empresarial/assets/pedro.jpg"
+									alt=""
+								/>
+								<h4>Del Periodismo a la Cima Empresarial</h4>
+								<p>Pedro Cabañas Reynal</p>
+							</a>
+						</div>
+					</div>
+				</section> -->
+				<section class="about" id="about">
 					<div class="about-item">
 						<img
 							class="about-img"
@@ -378,7 +378,7 @@
 							</div>
 							<div class="slider-card swiper-slide">
 								<div class="slide-overlay">
-									<h4 class="slide-name">Tzadick</h4>
+									<h4 class="slide-name">Tzadik</h4>
 									<p class="slide-rol">Programación Web</p>
 								</div>
 								<img class="slide-img" src="./assets/team/tzadick.jpg" alt="" />
@@ -419,7 +419,7 @@
 						Tu opinión es muy importante para nosotros. Escríbenos un mensajito
 						por Whatsapp y cuéntanos que te ha parecido la revista.
 					</p>
-					<a class="contact-button button-secondary" href="#">Whatsapp</a>
+					<a class="contact-button button-secondary" href="https://wa.me/5212229142826">Whatsapp</a>
 				</section>
 			</div>
 		</main>
@@ -451,31 +451,23 @@
 							/>
 							Acerca de</a
 						>
+					</div>
+					<div class="footer-menu-2">
 						<a class="footer-menu-link" href="#team">
 							<img
 								class="footer-menu-icon"
 								src="./assets/icons/team.svg"
-								alt="Icono Directorio"
+								alt="Icono Team"
 							/>
 							Team</a
 						>
-					</div>
-					<div class="footer-menu-2">
-						<a class="footer-menu-link" href="#">
+						<a class="footer-menu-link" href="#contact">
 							<img
 								class="footer-menu-icon"
-								src="./assets/icons/privacy-icon.svg"
-								alt="Icono Politicas y Privacidad"
+								src="./assets/icons/contact.svg"
+								alt="Icono Contacto"
 							/>
-							Politicas y Privacidad</a
-						>
-						<a class="footer-menu-link" href="#">
-							<img
-								class="footer-menu-icon"
-								src="./assets/icons/conditions-icon.svg"
-								alt="Icono Términos y condiciones"
-							/>
-							Términos y Condiciones</a
+							Contacto</a
 						>
 					</div>
 				</div>

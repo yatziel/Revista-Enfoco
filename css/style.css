@@ -114,7 +114,7 @@ a:hover {
   margin: 0 auto;
   padding: 1rem 2rem;
   width: fit-content;
-  font-weight: 600;
+  font-weight: 800;
   color: var(--white);
   border-radius: 4rem;
   background-color: var(--cyan);
@@ -545,3 +545,13 @@ a:hover {
   }
 }
 
+/* Blog */
+
+.post-card {
+	background-color: var(--black);	
+}
+
+.post-link {
+	
+	background-color: var(--black);
+}
